@@ -1,0 +1,150 @@
+/* Reset styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Container styles */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.notification.show {
+  opacity: 1;
+}
+
+/* Heading styles */
+
+h1 {
+  color: #1e88e5;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form styles */
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background-color: #1e88e5;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0e5bb3;
+}
+
+/* List styles */
+
+.tasks {
+  list-style: none;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.task label {
+  flex: 1;
+  margin-left: 10px;
+  width: auto;
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.task input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task .delete {
+  padding: 5px 10px;
+  margin-inline: auto;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background-color: #ef5350;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task .delete:hover {
+  background-color: #a51b18;
+}
+
+.task .edit {
+  padding: 5px 10px;
+  margin-right: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background-color: #24d41e;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task .edit:hover {
+  background-color: #17b12b;
+}
